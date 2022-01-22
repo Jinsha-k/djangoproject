@@ -1,0 +1,12 @@
+<html>
+    <body>
+            <form action="{% url 'app1:update' user.id %}" method="POST">
+                {% csrf_token %}
+            <table>
+                <tr><td>{{f.as_table}}</td></tr>
+            </table>	
+            <input type="submit" name="btsub" value="update">
+            </form>
+    
+    </body>
+</html>

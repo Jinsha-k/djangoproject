@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+    
+        <body style="background-color: darkgreen;">
+            <div class="container" style="background-color: whitesmoke; margin-top: 50px; margin-right: 45px;">
+                <form action="{% url 'app1:register' %}" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <table style="margin-top: 50px;background-color: darkgrey; margin-bottom: 30px;">
+                        <tr><td>{{form.as_table}}</td></tr>
+                    </table>
+                    <input type="submit" name="btsub" value="register" class="btn btn-success">
+    
+                </form>
+            </div>
+            
+
+
+        </body>
+</html>

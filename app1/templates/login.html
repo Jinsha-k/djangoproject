@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+      <body style="background-color: seagreen;">
+        <div class="container" style="background-color:whitesmoke; width: 450;margin-top: 100px;">
+            <form action="{% url 'app1:login' %}" method="POST">
+                {% csrf_token %}
+                <table>
+                    <tr><td style="padding-bottom: 50px;">{{form.as_table}}</td></tr>
+                </table><br><br>
+                <input type="submit" name="btsub" value="login" class="btn btn-success">
+    
+            </form>
+        </div>
+       
+    </body>
+</html>
+    
+   

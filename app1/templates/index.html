@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+<body  style="background-color: aqua;">
+    <div class="container" >
+        <div style="border: 1px outset brown; height: 400px; width: 300px; padding: 10px;background-color: rgb(235, 187, 126);margin-top: 80px;margin-left: 300px;">
+            <a href="{% url 'app1:register' %}"><button class="btn btn-success">Signup</button> </a><br><br><br>
+        <a href="{% url 'app1:login' %}"><button class="btn btn-success">Login</button></a><br><br><br>
+        <a href="{% url 'app1:gallery' %}"><button class="btn btn-success">Gallery</button></a>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
